@@ -2,18 +2,17 @@
 body{
   width: 90%;
   margin: 0 auto;
+  background-color: #f7f7fd;
   font-family: 'Inter', sans-serif;
 }
 header img{
   padding: 3em 2em;
 }
 .principal{
-  /* padding: 0 1em; */
-  /* margin: 0 auto; */
-  /* background-color: rgb(24, 201, 53); */
-  text-align: center;
+  text-align: center; 
 }
 .area-texto{
+  background-color: #f7f7fd;
   width: 90%;
   padding: 0 1em;
   border: none;
@@ -25,5 +24,51 @@ header img{
 }
 .area-texto:focus{
   outline: none;
+}
+.aviso{
+  padding: 1em 0;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.aviso img{
+  display: inline-block;
+  margin-right: 5px;
+}
+.aviso p{
+  display: inline;
+  color: #495057;
+  font-size:1em;
+  vertical-align: top;
+}
+.principal button{
+  width: 90%;
+  margin-bottom: 1.5em;
+  font-size: 1.2em;
+  padding: 1.5em;
+  border: 2px solid #0A3871;
+  border-radius: 30px;
+}
+.button-encriptar{
+  color: white;
+  background-color: #0A3871;
+}
+.button-desencriptar{
+  color: #0A3871;
+  background-color: #f7f7fd;
+}
+.area-respuesta{
+  width: 75%;
+  margin: 1.5em;
+  padding: 3em 1.5em;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 35px;
+  color: #343A40;
+  box-shadow: 2px 10px 10px #38383816;
+}
+.mensaje-no-encontrado{
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  font-weight: bold;
 }
 }
