@@ -1,0 +1,29 @@
+@media (max-width: 430px) {
+body{
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+}
+header img{
+  padding: 3em 2em;
+}
+.principal{
+  /* padding: 0 1em; */
+  /* margin: 0 auto; */
+  /* background-color: rgb(24, 201, 53); */
+  text-align: center;
+}
+.area-texto{
+  width: 90%;
+  padding: 0 1em;
+  border: none;
+  resize: none;
+  font-weight: 400;
+  font-size: 2em;
+  color: #0A3871;
+  box-shadow: none;
+}
+.area-texto:focus{
+  outline: none;
+}
+}
