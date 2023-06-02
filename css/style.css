@@ -40,7 +40,7 @@ header img{
   font-size:1em;
   vertical-align: top;
 }
-.principal button{
+button{
   width: 90%;
   margin-bottom: 1.5em;
   font-size: 1.2em;
@@ -51,7 +51,7 @@ header img{
 .principal button:active{
   font-size: 1.3em;
 }
-.button-encriptar{
+#button-encriptar{
   color: white;
   background-color: #0A3871;
 }
@@ -72,5 +72,14 @@ header img{
   font-size: 1.5em;
   margin-bottom: 1em;
   font-weight: bold;
+}
+#copiar{
+  width: 98%;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding: 1em;
+  color: #0A3871;
+  background-color: #fff;
+  display:none;
 }
 }
