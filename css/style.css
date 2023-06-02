@@ -28,7 +28,7 @@ header img{
 .aviso{
   padding: 1em 0;
   text-align: left;
-  margin-bottom: 5px;
+  margin: 10px 0 5px 0 ;
 }
 .aviso img{
   display: inline-block;
