@@ -1,6 +1,7 @@
 let texto;
 let buttonEncriptar = document.querySelector("#button-encriptar");
 let buttonDesencriptar = document.querySelector(".button-desencriptar");
+let imgMuneco = document.querySelector(".muneco");
 let mensaje = document.querySelector(".mensaje-no-encontrado");
 let mensaje2 = document.querySelector(".mensaje2");
 let copiarButton = document.getElementById("copiar");
@@ -11,6 +12,7 @@ function encriptarTexto() {
   texto = texto.replace(/a/g, "ai");
   texto = texto.replace(/o/g, "ober");
   texto = texto.replace(/u/g, "ufat");
+  imgMuneco.style.display = "none";
   mensaje.style.fontWeight = "normal";
   mensaje2.style.display = "none";
   copiarButton.style.display = "block";
@@ -24,6 +26,7 @@ function desencriptarTexto() {
   texto = texto.replace(/ai/g, "a");
   texto = texto.replace(/ober/g, "o");
   texto = texto.replace(/ufat/g, "u");
+  imgMuneco.style.display = "none";
   mensaje.style.fontWeight = "normal";
   mensaje2.style.display = "none";
   copiarButton.style.display = "block";

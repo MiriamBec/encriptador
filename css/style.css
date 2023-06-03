@@ -8,7 +8,7 @@ header img{
   padding: 3em 2em;
 }
 .principal{
-  text-align: center; 
+  text-align: center;
 }
 .area-texto{
   background-color: #f7f7fd;
@@ -42,6 +42,10 @@ button{
   font-size: 1.2em;
   border: 2px solid #0A3871;
   border-radius: 30px;
+}
+button:hover{
+  cursor: pointer;
+  opacity: 0.7;
 }
 .principal button:active{
   font-size: 1.3em;
