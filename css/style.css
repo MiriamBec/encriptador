@@ -1,6 +1,5 @@
-@media (max-width: 430px) {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 body{
-  width: 90%;
   margin: 0 auto;
   background-color: #f7f7fd;
   font-family: 'Inter', sans-serif;
@@ -13,11 +12,9 @@ header img{
 }
 .area-texto{
   background-color: #f7f7fd;
-  width: 90%;
   padding: 0 1em;
   border: none;
   resize: none;
-  font-weight: 400;
   font-size: 2em;
   color: #0A3871;
   box-shadow: none;
@@ -41,10 +38,8 @@ header img{
   vertical-align: top;
 }
 button{
-  width: 90%;
   margin-bottom: 1.5em;
   font-size: 1.2em;
-  padding: 1em;
   border: 2px solid #0A3871;
   border-radius: 30px;
 }
@@ -57,7 +52,6 @@ button{
 }
 .button-desencriptar{
   color: #0A3871;
-  background-color: #f7f7fd;
 }
 .area-respuesta{
   margin: 1.5em;
@@ -81,5 +75,4 @@ button{
   color: #0A3871;
   background-color: #fff;
   display:none;
-}
 }

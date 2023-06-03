@@ -1,0 +1,49 @@
+
+@media (min-width: 900px) {
+  body{
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 90%;
+  }
+  main{
+    display: flex;
+    flex-direction: row;
+  }
+  .principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 150px;
+    width: 70%;
+    padding: 0 3em;
+  }
+  .area-texto{
+    width: 95%;
+    font-weight: 300;
+  }
+  .aviso{
+    margin-left:30px ;
+  }
+  button{
+    width: 320px;
+    margin-right: 25px;
+    padding: 0.8em;
+    border-radius: 20px;
+  }
+  .button-desencriptar{
+    background-color: #D8DFE8;
+  }
+  .area-respuesta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20em;
+    padding: 2em;
+  }
+  .area-respuesta img{
+    width: 15em;
+    margin-bottom: 2em;
+  }
+}

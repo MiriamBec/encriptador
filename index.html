@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/movil-style.css" />
+    <link rel="stylesheet" href="css/desktop-style.css" />
     <title>encriptador</title>
   </head>
   <body>
@@ -27,14 +23,17 @@
           rows="8"
           placeholder="Ingrese el texto aquí"
         ></textarea>
-        <div class="aviso">
-          <img src="img/exclamacion.png" alt="signo de exclamación" />
-          <p>Solo letras minusculas y sin acento</p>
+        <div>
+          <div class="aviso">
+            <img src="img/exclamacion.png" alt="signo de exclamación" />
+            <p>Solo letras minusculas y sin acento</p>
+          </div>
+          <button id="button-encriptar">Encriptar</button>
+          <button class="button-desencriptar">Desencriptar</button>
         </div>
-        <button id="button-encriptar">Encriptar</button>
-        <button class="button-desencriptar">Desencriptar</button>
       </section>
       <section class="area-respuesta">
+        <img class="muneco" src="img/muneco.png" alt="muneco con una lupa" />
         <p class="mensaje-no-encontrado">Nigún mensaje fue encontrado</p>
         <p class="mensaje2">
           Ingrese el texto que desee encriptar o desencriptar
