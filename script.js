@@ -30,7 +30,19 @@ function desencriptarTexto() {
   return (mensaje.innerHTML = texto);
 }
 
+function copiarTexto() {
+  let contenido = mensaje.innerText;
+
+  navigator.clipboard
+    .writeText(contenido)
+    .then(function () {
+      console.log("Contenido copiado al portapapeles");
+    })
+    .catch(function (error) {
+      console.error("Error al copiar el contenido: ", error);
+    });
+}
+
 buttonEncriptar.onclick = encriptarTexto;
 buttonDesencriptar.onclick = desencriptarTexto;
-// console.log(encriptarTexto());
-// console.log(desencriptarTexto());
+copiarButton.onclick = copiarTexto;
