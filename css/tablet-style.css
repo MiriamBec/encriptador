@@ -1,0 +1,31 @@
+@media screen and (min-width: 651px) and (max-width: 1023px){
+  body{
+    width: 90%;
+  }
+  header img{
+    padding: 4em 2em;
+  }
+  .area-texto{
+    width: 90%;
+    min-height: 470px;
+  }
+  .div-buttons{
+    margin-left: 1.3em;
+    margin-bottom: 40px;
+  }
+  button{
+    width: 45% ;
+    margin-right: 25px;
+    padding: 0.8em;
+    border-radius: 20px;
+  }
+  .button-desencriptar{
+    background-color: #f7f7fd;
+  }
+  .area-respuesta{
+    box-shadow: 5px 15px 20px #38383816;
+  }
+  .muneco{
+    display: none;
+  }
+  }
