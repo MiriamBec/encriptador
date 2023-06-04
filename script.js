@@ -4,7 +4,8 @@ let buttonDesencriptar = document.querySelector("#button-desencriptar");
 let imgMuneco = document.querySelector(".muneco");
 let mensaje = document.querySelector(".mensaje-no-encontrado");
 let mensaje2 = document.querySelector(".mensaje2");
-let copiarButton = document.getElementById("copiar");
+let buttonCopiar = document.getElementById("button-copiar");
+
 function encriptarTexto() {
   texto = document.querySelector(".area-texto").value;
   texto = texto.replace(/e/g, "enter");
@@ -15,7 +16,7 @@ function encriptarTexto() {
   imgMuneco.style.display = "none";
   mensaje.style.fontWeight = "normal";
   mensaje2.style.display = "none";
-  copiarButton.style.display = "block";
+  buttonCopiar.style.display = "block";
   return (mensaje.innerHTML = texto);
 }
 
@@ -29,7 +30,7 @@ function desencriptarTexto() {
   imgMuneco.style.display = "none";
   mensaje.style.fontWeight = "normal";
   mensaje2.style.display = "none";
-  copiarButton.style.display = "block";
+  buttonCopiar.style.display = "block";
   return (mensaje.innerHTML = texto);
 }
 
@@ -48,4 +49,4 @@ function copiarTexto() {
 
 buttonEncriptar.onclick = encriptarTexto;
 buttonDesencriptar.onclick = desencriptarTexto;
-copiarButton.onclick = copiarTexto;
+buttonCopiar.onclick = copiarTexto;
