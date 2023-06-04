@@ -1,12 +1,12 @@
 let texto;
 let buttonEncriptar = document.querySelector("#button-encriptar");
-let buttonDesencriptar = document.querySelector(".button-desencriptar");
+let buttonDesencriptar = document.querySelector("#button-desencriptar");
 let imgMuneco = document.querySelector(".muneco");
 let mensaje = document.querySelector(".mensaje-no-encontrado");
 let mensaje2 = document.querySelector(".mensaje2");
 let copiarButton = document.getElementById("copiar");
 function encriptarTexto() {
-  texto = document.getElementById("myTextarea").value;
+  texto = document.querySelector(".area-texto").value;
   texto = texto.replace(/e/g, "enter");
   texto = texto.replace(/i/g, "imes");
   texto = texto.replace(/a/g, "ai");
@@ -20,7 +20,7 @@ function encriptarTexto() {
 }
 
 function desencriptarTexto() {
-  texto = document.getElementById("myTextarea").value;
+  texto = document.querySelector(".area-texto").value;
   texto = texto.replace(/enter/g, "e");
   texto = texto.replace(/imes/g, "i");
   texto = texto.replace(/ai/g, "a");

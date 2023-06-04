@@ -54,7 +54,7 @@ button:hover{
   color: white;
   background-color: #0A3871;
 }
-.button-desencriptar{
+#button-desencriptar{
   color: #0A3871;
 }
 .area-respuesta{
@@ -81,3 +81,120 @@ button:hover{
   background-color: #fff;
   display:none;
 }
+
+@media (max-width: 650px) {
+  body{
+    width: 90%;
+  }
+  .area-texto{
+    width: 90%;
+  }
+  button{
+    width: 90%;
+    padding: 1em;
+  }
+  #button-desencriptar{
+    background-color: #f7f7fd;
+  }
+  .muneco{
+    display: none;
+  }
+  }
+
+  @media screen and (min-width: 651px) and (max-width: 1023px){
+    body{
+      width: 90%;
+    }
+    header img{
+      padding: 4em 2em;
+    }
+    .area-texto{
+      width: 90%;
+      min-height: 470px;
+    }
+    .div-buttons{
+      margin-left: 1.3em;
+      margin-bottom: 40px;
+    }
+    button{
+      width: 45% ;
+      margin-right: 25px;
+      padding: 0.8em;
+      border-radius: 20px;
+    }
+    #button-desencriptar{
+      background-color: #f7f7fd;
+    }
+    .area-respuesta{
+      box-shadow: 5px 15px 20px #38383816;
+    }
+    .muneco{
+      display: none;
+    }
+    }
+
+    @media (min-width: 1024px) {
+      body{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 90%;
+      }
+      header{
+        width: 3%;
+        text-align: center;
+    
+      }
+      header img{
+        padding: 3em 0;
+      }
+      main{
+        display: flex;
+        flex-direction: row;
+      }
+      .principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 150px;
+        margin-left: 2em;
+        width: 70%;
+        padding: 0 1em;
+      }
+      .area-texto{
+        width: 95%;
+        font-weight: 300;
+        min-height: 550px;
+        /* min-height: 60vh; */
+      }
+      .div-buttons{
+        margin-bottom: 20px;
+      }
+      .aviso{
+        margin-left:30px ;
+      }
+      button{
+        width: 320px;
+        margin-right: 25px;
+        padding: 0.8em;
+        border-radius: 20px;
+      }
+      #button-desencriptar{
+        background-color: #D8DFE8;
+      }
+      .area-respuesta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 25em;
+        padding: 2em;
+        margin-left: 0;
+      }
+      .area-respuesta img{
+        width: 15em;
+        margin-bottom: 2em;
+      }
+    }
+
+
