@@ -8,36 +8,42 @@
     <title>encriptador</title>
   </head>
   <body>
-    <header>
-      <img src="img/Vector.png" alt="logo de Alura" />
-    </header>
-    <main>
-      <section class="principal">
-        <textarea
-          name="area-texto"
-          class="area-texto"
-          cols="30"
-          rows="8"
-          placeholder="Ingrese el texto aquí"
-        ></textarea>
-        <div class="div-buttons">
-          <div class="aviso">
-            <img src="img/exclamacion.png" alt="signo de exclamación" />
-            <p>Solo letras minusculas y sin acento</p>
+    <div class="header-main">
+      <header>
+        <img src="img/Vector.png" alt="logo de Alura" />
+      </header>
+      <main>
+        <section class="principal">
+          <textarea
+            name="area-texto"
+            class="area-texto"
+            cols="30"
+            rows="8"
+            placeholder="Ingrese el texto aquí"
+          ></textarea>
+          <div class="div-buttons">
+            <div class="aviso">
+              <img src="img/exclamacion.png" alt="signo de exclamación" />
+              <p>Solo letras minusculas y sin acento</p>
+            </div>
+            <button id="button-encriptar">Encriptar</button>
+            <button id="button-desencriptar">Desencriptar</button>
           </div>
-          <button id="button-encriptar">Encriptar</button>
-          <button id="button-desencriptar">Desencriptar</button>
-        </div>
-      </section>
-      <section class="area-respuesta">
-        <img class="muneco" src="img/muneco.png" alt="muneco con una lupa" />
-        <p class="mensaje-no-encontrado">Nigún mensaje fue encontrado</p>
-        <p class="mensaje2">
-          Ingrese el texto que desee encriptar o desencriptar
-        </p>
-        <button id="button-copiar">Copiar</button>
-      </section>
-    </main>
+        </section>
+        <section class="area-respuesta">
+          <img class="muneco" src="img/muneco.png" alt="muneco con una lupa" />
+          <p class="mensaje-no-encontrado">Nigún mensaje fue encontrado</p>
+          <p class="mensaje2">
+            Ingrese el texto que desee encriptar o desencriptar
+          </p>
+          <button id="button-copiar">Copiar</button>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <img src="img/linkedin.webp" alt="logo de linkedin" />
+      <p>Miriam Becerra</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

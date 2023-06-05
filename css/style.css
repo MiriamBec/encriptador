@@ -101,6 +101,19 @@ button:hover{
   display:none;
 }
 
+/* footer */
+footer{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: 5em;
+  padding: 0 30px 10px 0;
+}
+
+footer img{
+  width: 2.5em;
+}
+
 /* Configuraciones para la interfaz móvil */
 @media (max-width: 650px) {
 
@@ -172,11 +185,13 @@ button:hover{
     /* Configuraciones para la interfaz desktop */
     @media (min-width: 1024px) {
 
-      body{
+      .header-main{
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
         justify-content: center;
         max-width: 90%;
+
       }
 
       header{
@@ -200,7 +215,7 @@ button:hover{
         justify-content: space-between;
         margin-top: 150px;
         margin-left: 2em;
-        width: 70%;
+        max-width: 46em;
         padding: 0 1em;
       }
 
@@ -216,7 +231,7 @@ button:hover{
       }
 
       .aviso{
-        margin-left:30px ;
+        margin-left:5px ;
       }
 
       button{
@@ -235,7 +250,7 @@ button:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 25em;
+        max-width: 20em;
         padding: 2em;
         margin-left: 0;
       }
@@ -244,7 +259,11 @@ button:hover{
         width: 15em;
         margin-bottom: 2em;
       }
-      
+
+      footer{
+        justify-content: center;
+        padding-right: 0;
+      }
     }
 
 
