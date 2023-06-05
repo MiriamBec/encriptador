@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+/* Diseño general */
 body{
   margin: 0 auto;
   background-color: #f7f7fd;
   font-family: 'Inter', sans-serif;
 }
+
 header img{
   padding: 3em 2em;
 }
+
+/* Sección del campo para el texto que va a ser encriptado/desencriptado */
 .principal{
   text-align: center;
 }
+
 .area-texto{
   background-color: #f7f7fd;
   padding: 0 1em;
@@ -19,44 +25,55 @@ header img{
   color: #0A3871;
   box-shadow: none;
 }
+
 .area-texto:focus{
   outline: none;
 }
+
 .aviso{
   padding: 1em 0;
   text-align: left;
   margin: 10px 0 5px 20px ;
 }
+
 .aviso img{
   display: inline-block;
   margin-right: 5px;
 }
+
 .aviso p{
   display: inline;
   color: #495057;
   font-size:1em;
   vertical-align: top;
 }
+
 button{
   margin-bottom: 1.5em;
   font-size: 1.2em;
   border: 2px solid #0A3871;
   border-radius: 30px;
 }
+
 button:hover{
   cursor: pointer;
   opacity: 0.7;
 }
+
 .principal button:active{
   font-size: 1.3em;
 }
+
 #button-encriptar{
   color: white;
   background-color: #0A3871;
 }
+
 #button-desencriptar{
   color: #0A3871;
 }
+
+/* Sección para el área para mostrar el texto encriptado/desencriptado. */
 .area-respuesta{
   margin: 1.5em;
   padding: 3em 1.5em;
@@ -67,11 +84,13 @@ button:hover{
   color: #343A40;
   box-shadow: 2px 10px 10px #38383816;
 }
+
 .mensaje-no-encontrado{
   font-size: 1.5em;
   margin-bottom: 1em;
   font-weight: bold;
 }
+
 #button-copiar{
   width: 98%;
   margin-top: 30px;
@@ -82,76 +101,99 @@ button:hover{
   display:none;
 }
 
+/* Configuraciones para la interfaz móvil */
 @media (max-width: 650px) {
+
   body{
     width: 90%;
   }
+
   .area-texto{
     width: 90%;
   }
+
   button{
     width: 90%;
     padding: 1em;
   }
+
   #button-desencriptar{
     background-color: #f7f7fd;
   }
+
   .muneco{
     display: none;
   }
+
   }
 
+  /* Configuraciones para la interfaz tablet */
   @media screen and (min-width: 651px) and (max-width: 1023px){
+
     body{
       width: 90%;
     }
+
     header img{
       padding: 4em 2em;
     }
+
     .area-texto{
       width: 90%;
       min-height: 470px;
     }
+
     .div-buttons{
       margin-left: 1.3em;
       margin-bottom: 40px;
     }
+
     button{
       width: 45% ;
       margin-right: 25px;
       padding: 0.8em;
       border-radius: 20px;
     }
+
     #button-desencriptar{
       background-color: #f7f7fd;
     }
+
     .area-respuesta{
       box-shadow: 5px 15px 20px #38383816;
     }
+
     .muneco{
       display: none;
     }
-    }
 
+    }
+    
+    /* Configuraciones para la interfaz desktop */
     @media (min-width: 1024px) {
+
       body{
         display: flex;
         flex-direction: row;
         justify-content: center;
         max-width: 90%;
       }
+
       header{
         width: 3%;
         text-align: center;
     
       }
+
       header img{
         padding: 3em 0;
       }
+
       main{
         display: flex;
         flex-direction: row;
       }
+
       .principal{
         display: flex;
         flex-direction: column;
@@ -161,27 +203,33 @@ button:hover{
         width: 70%;
         padding: 0 1em;
       }
+
       .area-texto{
         width: 95%;
         font-weight: 300;
         min-height: 550px;
         /* min-height: 60vh; */
       }
+
       .div-buttons{
         margin-bottom: 20px;
       }
+
       .aviso{
         margin-left:30px ;
       }
+
       button{
         width: 320px;
         margin-right: 25px;
         padding: 0.8em;
         border-radius: 20px;
       }
+      
       #button-desencriptar{
         background-color: #D8DFE8;
       }
+
       .area-respuesta{
         display: flex;
         flex-direction: column;
@@ -191,10 +239,12 @@ button:hover{
         padding: 2em;
         margin-left: 0;
       }
+
       .area-respuesta img{
         width: 15em;
         margin-bottom: 2em;
       }
+      
     }
 
 
